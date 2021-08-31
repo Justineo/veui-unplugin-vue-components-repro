@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -17,8 +19,15 @@
     "@vue/cli-plugin-babel": "~5.0.0-beta.3",
     "@vue/cli-plugin-eslint": "~5.0.0-beta.3",
     "@vue/cli-service": "~5.0.0-beta.3",
+    "babel-plugin-veui": "^2.0.6",
     "eslint": "^7.20.0",
     "eslint-plugin-vue": "^7.6.0",
+    "less-plugin-dls": "^1.0.0-beta.2",
+    "unplugin-vue-components": "^0.14.5",
+    "veui": "^2.0.6",
+    "veui-loader": "^2.0.6",
+    "veui-theme-dls": "^2.0.6",
+    "veui-theme-dls-icons": "^2.0.6",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
