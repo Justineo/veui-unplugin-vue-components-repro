@@ -1,24 +1,37 @@
-# veui-test
+# VEUI + unplugin-vue-components
 
-## Project setup
-```
-npm install
+## The Problem
+
+See `src/App.vue`:
+
+```vue
+<template>
+  <div id="app">
+    <veui-input-group> <!-- ❌ -->
+      <veui-input /> <!-- ✅ -->
+      <veui-button>OK</veui-button> <!-- ✅ -->
+    </veui-input-group>
+
+    <veui-select> <!-- ❌ -->
+      <veui-option value="1">Option 1</veui-option> <!-- ✅ -->
+      <veui-option value="2">Option 2</veui-option> <!-- ✅ -->
+    </veui-select>
+
+    <veui-date-picker /> <!-- ✅ -->
+  </div>
+</template>
+
+<script>
+export default {
+  name: "App"
+};
+</script>
+
+<style>
+#app {
+  margin-top: 60px;
+}
+</style>
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+It seems that non-leaf components are not transformed thus are rendered as custom elements.
