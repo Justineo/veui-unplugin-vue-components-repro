@@ -22,7 +22,7 @@
     "babel-plugin-veui": "^2.0.6",
     "eslint": "^7.20.0",
     "eslint-plugin-vue": "^7.6.0",
-    "less-plugin-dls": "^1.0.0-beta.2",
+    "less-plugin-dls": "1.0.0-beta.2",
     "unplugin-vue-components": "^0.14.5",
     "veui": "^2.0.6",
     "veui-loader": "^2.0.6",
